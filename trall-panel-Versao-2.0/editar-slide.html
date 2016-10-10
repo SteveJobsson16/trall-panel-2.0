@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="">
+
+        <title>Trall Panel | Editar Slide</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/jasny-bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+        <!-- style admin CSS -->
+        <link href="assets/css/color.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- style do menu -->
+        <link href="assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm box-menu-lateral">
+            <a class="navmenu-brand visible-md visible-lg" href="#">
+                <img src="assets/upload/Logo/logo-default-nav-left.jpg" class="img-responsive" alt="Logo">
+            </a>
+            <ul class="nav navmenu-nav">
+                <li class="">
+                    <a class="menu-lateral-li" href="dashbord.html">
+                        <i class="fa fa-tachometer icon-ajuste" aria-hidden="true"></i>
+                        Dashbord
+                    </a>
+                </li>
+                <li class="dropdown active open">
+                    <a href="#" class="dropdown-toggle menu-lateral-li" data-toggle="dropdown">
+                        <i class="fa fa-globe icon-ajuste" aria-hidden="true"></i> Pagina Home <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu navmenu-nav dropdown-menu-lateral">
+                        <li class="active">
+                            <a class="dropdown-menu-lateral-li" href="editar-slide.html">Slide</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe icon-ajuste" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe icon-ajuste" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle menu-lateral-li" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i> Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu navmenu-nav dropdown-menu-lateral">
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashbord.html">Trall Panel</a>
+        </div>
+
+        <div class="container-fluid menu-topo">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="bloco-foto-usuario col-sm-4 col-xs-4">
+                    <img src="assets/upload/usuarios/user-adm.jpg" class="img-responsive" alt="Logo">
+                </li>
+            </ul> <!-- div /.nav navbar-nav.navbar-right -->
+        </div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fa fa-image icon-ajuste" aria-hidden="true"></i> Editar Slide</h1>
+            </div> <!-- div /.page-header -->
+
+            <!-- Alertas da pagina -->
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="sr-only">Erro:</span>
+                <strong>Tudo certo!</strong>
+                Suas alterações foram salvas!
+                <strong>:)</strong>
+            </div><!-- fim div .alert.alert-success.alert-dismissible -->
+
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+                <span class="sr-only">Erro:</span>
+                <strong>Ops!</strong>
+                Algo deu errado, volte e arrume os campos abaixo!
+                <strong>:(</strong>
+            </div><!-- fim div .alert.alert-danger.alert-dismissible -->
+
+            <!-- FIM Alertas da pagina -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 btn-header-page">
+                    <button type="button" class="btn btn-labeled btn-success">
+                        <span class="btn-label"><i class="glyphicon glyphicon-plus"></i></span>Adicionar Slide
+                    </button>
+                </div><!-- div /.col-sm-12.col-md-12 -->
+            </div> <!-- div /.row -->
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="assets/upload/banner/banner-1.svg" alt="Imagem responsiva">
+                        <div class="caption">
+                            <h4>Nome da Imagem 1</h4>
+                            <p>Descrição do banner</p>
+                                <!-- Danger button with label -->
+                                <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#edit-slide-1">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    Editar
+                                </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="edit-slide-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Imagem Banner "Nome-image.png"</h4>
+                                        </div><!-- fim div .modal-header -->
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                               <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                                </div>
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima encima insira a imagem (1000PX x 500PX)</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem" value="nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima digite o nome da imagem!</span>
+                                            </div><!-- fim div .input-group -->
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Url da imagem </label>
+                                                <input type="url" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> no campo acima, digite o URL que a imagem conterá!</span>
+                                            </div><!-- fim div .input-group -->
+                                        </div><!-- fim div .modal-body -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-labeled"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Excluir</button>
+                                            <button type="button" class="btn btn-success tn-labeled" data-dismiss="modal"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Salvar</button>
+                                        </div><!-- fim div .modal-footer -->
+                                    </div><!-- fim div .modal-content -->
+                                </div><!-- fim div .modal-dialog -->
+                            </div><!-- fim div .modal .fade -->
+                        </div><!-- fim div .Capition -->
+                    </div><!-- fim div .thumbnail -->
+                </div><!-- fim  div .col-sm-6 col-md-3 -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="assets/upload/banner/banner-1.svg" alt="Imagem responsiva">
+                        <div class="caption">
+                            <h4>Nome da Imagem 1</h4>
+                            <p>Descrição do banner</p>
+                                <!-- Danger button with label -->
+                                <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#edit-slide-2">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    Editar
+                                </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="edit-slide-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Imagem Banner "Nome-image.png"</h4>
+                                        </div><!-- fim div .modal-header -->
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                               <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                                </div>
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima encima insira a imagem (1000PX x 500PX)</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem" value="nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima digite o nome da imagem!</span>
+                                            </div><!-- fim div .input-group -->
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Url da imagem </label>
+                                                <input type="url" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> no campo acima, digite o URL que a imagem conterá!</span>
+                                            </div><!-- fim div .input-group -->
+                                        </div><!-- fim div .modal-body -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-labeled"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Excluir</button>
+                                            <button type="button" class="btn btn-success tn-labeled" data-dismiss="modal"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Salvar</button>
+                                        </div><!-- fim div .modal-footer -->
+                                    </div><!-- fim div .modal-content -->
+                                </div><!-- fim div .modal-dialog -->
+                            </div><!-- fim div .modal .fade -->
+                        </div><!-- fim div .Capition -->
+                    </div><!-- fim div .thumbnail -->
+                </div><!-- fim  div .col-sm-6 col-md-3 -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="assets/upload/banner/banner-1.svg" alt="Imagem responsiva">
+                        <div class="caption">
+                            <h4>Nome da Imagem 1</h4>
+                            <p>Descrição do banner</p>
+                                <!-- Danger button with label -->
+                                <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#edit-slide-1">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    Editar
+                                </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="edit-slide-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Imagem Banner "Nome-image.png"</h4>
+                                        </div><!-- fim div .modal-header -->
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                               <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                                </div>
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima encima insira a imagem (1000PX x 500PX)</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem" value="nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima digite o nome da imagem!</span>
+                                            </div><!-- fim div .input-group -->
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Url da imagem </label>
+                                                <input type="url" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> no campo acima, digite o URL que a imagem conterá!</span>
+                                            </div><!-- fim div .input-group -->
+                                        </div><!-- fim div .modal-body -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-labeled"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Excluir</button>
+                                            <button type="button" class="btn btn-success tn-labeled" data-dismiss="modal"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Salvar</button>
+                                        </div><!-- fim div .modal-footer -->
+                                    </div><!-- fim div .modal-content -->
+                                </div><!-- fim div .modal-dialog -->
+                            </div><!-- fim div .modal .fade -->
+                        </div><!-- fim div .Capition -->
+                    </div><!-- fim div .thumbnail -->
+                </div><!-- fim  div .col-sm-6 col-md-3 -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="assets/upload/banner/banner-1.svg" alt="Imagem responsiva">
+                        <div class="caption">
+                            <h4>Nome da Imagem 1</h4>
+                            <p>Descrição do banner</p>
+                                <!-- Danger button with label -->
+                                <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#edit-slide-1">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    Editar
+                                </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="edit-slide-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Imagem Banner "Nome-image.png"</h4>
+                                        </div><!-- fim div .modal-header -->
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                               <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                                </div>
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima encima insira a imagem (1000PX x 500PX)</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem" value="nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima digite o nome da imagem!</span>
+                                            </div><!-- fim div .input-group -->
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Url da imagem </label>
+                                                <input type="url" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> no campo acima, digite o URL que a imagem conterá!</span>
+                                            </div><!-- fim div .input-group -->
+                                        </div><!-- fim div .modal-body -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-labeled"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Excluir</button>
+                                            <button type="button" class="btn btn-success tn-labeled" data-dismiss="modal"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Salvar</button>
+                                        </div><!-- fim div .modal-footer -->
+                                    </div><!-- fim div .modal-content -->
+                                </div><!-- fim div .modal-dialog -->
+                            </div><!-- fim div .modal .fade -->
+                        </div><!-- fim div .Capition -->
+                    </div><!-- fim div .thumbnail -->
+                </div><!-- fim  div .col-sm-6 col-md-3 -->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="assets/upload/banner/banner-1.svg" alt="Imagem responsiva">
+                        <div class="caption">
+                            <h4>Nome da Imagem 1</h4>
+                            <p>Descrição do banner</p>
+                                <!-- Danger button with label -->
+                                <button type="button" class="btn btn-labeled btn-primary" data-toggle="modal" data-target="#edit-slide-1">
+                                    <span class="btn-label"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    Editar
+                                </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="edit-slide-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Editar Imagem Banner "Nome-image.png"</h4>
+                                        </div><!-- fim div .modal-header -->
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                               <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                    <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                                </div>
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima encima insira a imagem (1000PX x 500PX)</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Nome da Imagem <span class="campo-obrigatoria">*</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem" value="nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> No campo acima digite o nome da imagem!</span>
+                                            </div><!-- fim div .input-group -->
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Url da imagem </label>
+                                                <input type="url" class="form-control" id="exampleInputEmail1" placeholder="Nome da Imagem">
+                                                <span id="helpBlock" class="help-block"><i class="fa fa-question-circle icon-ajuste" aria-hidden="true"></i> no campo acima, digite o URL que a imagem conterá!</span>
+                                            </div><!-- fim div .input-group -->
+                                        </div><!-- fim div .modal-body -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-labeled"><span class="btn-label"><i class="glyphicon glyphicon-remove"></i></span>Excluir</button>
+                                            <button type="button" class="btn btn-success tn-labeled" data-dismiss="modal"><span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Salvar</button>
+                                        </div><!-- fim div .modal-footer -->
+                                    </div><!-- fim div .modal-content -->
+                                </div><!-- fim div .modal-dialog -->
+                            </div><!-- fim div .modal .fade -->
+                        </div><!-- fim div .Capition -->
+                    </div><!-- fim div .thumbnail -->
+                </div><!-- fim  div .col-sm-6 col-md-3 -->
+
+
+
+
+
+
+            </div> <!-- div /.row -->
+
+
+
+
+
+
+
+
+
+
+        </div><!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jasny-bootstrap.min.js"></script>
+    </body>
+</html>

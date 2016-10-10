@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="">
+
+        <title>Trall Panel</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="../assets/css/jasny-bootstrap.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+        <!-- style admin CSS -->
+        <link href="../assets/css/color.css" rel="stylesheet">
+        <link href="../assets/css/style.css" rel="stylesheet">
+
+        <!-- style do menu -->
+        <link href="../assets/css/navmenu-style-1.css" rel="stylesheet">
+
+        <!-- style do menu -->
+        <link href="../assets/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <!-- MENU -->
+        <div class="navmenu navmenu-default navmenu-fixed-left box-menu-lateral offcanvas">
+            <a class="navmenu-brand " href="#">
+                <img src="../assets/upload/Logo/logo-default-nav-left.jpg" class="img-responsive" alt="Logo">
+            </a>
+            <ul class="nav navmenu-navbox-menu-lateral">
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle menu-lateral-li" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i> Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu navmenu-nav dropdown-menu-lateral">
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-menu-lateral-li" href="#">drop 1</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-lateral-li" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        Link 1
+                    </a>
+                </li>
+            </ul> <!-- li /.nav.navmenu-nav -->
+        </div> <!-- div /.navmenu.navmenu-default.navmenu-fixed-left -->
+
+        <!-- fim MENU -->
+
+        <div class="canvas">
+            <nav class="navbar navbar-default menu-topo color-menu-topo">
+                <div class="container-fluid">
+                    <!-- BTN para puxar o menu -->
+                    <div class="navbar-header">
+                        <div class="navbar navbar-default navbar-fixed-top">
+                            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div> <!-- div /.navbar.navbar-default.navbar-fixed-top -->
+                    </div> <!-- div /.navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="link-menu" href="index.html">
+                                    Visualizar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-menu" href="index.html">
+                                    Visualizar
+                                </a>
+                            </li>
+                            <li class="bloco-foto-usuario"><img src="../assets/upload/usuarios/user-adm.jpg" class="img-responsive" alt="Logo"></li>
+
+
+                        </ul> <!-- div /.nav navbar-nav.navbar-right -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- FIM MENU -->
+
+            <div class="container">
+                <div class="row text-center">
+                   <div class="page-header">
+                      <h2><i class="fa fa-globe" aria-hidden="true"></i> Cadastros de Pessoa Fisica</h2>
+                    </div> <!-- div /.page-header -->
+                </div> <!-- div /.row -->
+
+                <div class="row">
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        <span class="sr-only">Ok:</span>
+                        <strong>Tudo certo!</strong>
+                        Suas alterações foram salvas!
+                        <strong>:)</strong>
+                    </div>
+
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        <span class="sr-only">Erro:</span>
+                        <strong>Ops!</strong>
+                        Algo deu errado, volte e arrume os campos abaixo!
+                        <strong>:(</strong>
+                    </div>
+                </div><!-- div /.row -->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
+                        <div class="list-group" style="border-radius:none;">
+                            <a href="#geral" class="list-group-item a-style-menu-inline" aria-controls="visao" role="tab" data-toggle="tab" style="border-radius: 0px !important;">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Geral
+                            </a>
+                            <a href="#conta" class="list-group-item a-style-menu-inline" aria-controls="messages" role="tab" data-toggle="tab">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                Informaçôes de contato
+                            </a>
+                            <a href="#perfil-blog" class="list-group-item a-style-menu-inline" aria-controls="messages" role="tab" data-toggle="tab" style="border-radius: 0px !important;">
+                                <i class="fa fa-rss" aria-hidden="true"></i>
+                                Perfil Blog
+                            </a>
+                        </div> <!-- div /.list-group -->
+                    </div> <!-- div /.col-lg-3.col-md-3.col-sm-12.col-xs-12.tst  -->
+
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="panel panel-info tab-pane fade in active" id="geral">
+                                <div class="panel-heading">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Geral
+                                </div> <!-- fim div .painel-heading -->
+                                <div class="panel-body">
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                            <div>
+                                                <span class="btn btn-success btn-file"><span class="fileinput-new">Selecionar Imagem</span><span class="fileinput-exists">Trocar</span><input type="file" name="..."></span>
+                                                <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remover</a>
+                                            </div>
+                                        </div> <!-- div /.fileinput fileinput-new -->
+                                    </div> <!-- div./col-lg-4.col-md-4.col-sm-6.col-xs-6  -->
+
+
+                                    <div class="form-group col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Nome</label>
+                                        <input type="text" class="form-control " id="" placeholder="Nome">
+                                        <span id="helpBlock" class="help-block">Digite o Número da sua CNH</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Data de Nascimento</label>
+                                        <input type="date" class="form-control " id="" placeholder="Nome">
+                                        <span id="helpBlock" class="help-block">Selecione a data de nasciemento!</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="">Nacionalidade</label>
+                                        <select class="form-control ">
+                                            <option>Selecione</option>
+                                            <option>Brasil</option>
+                                            <option>.</option>
+                                            <option>.</option>
+                                            <option>.</option>
+                                        </select>
+                                        <span id="helpBlock" class="help-block">Selecione a data de nasciemento!</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Nome do Pai</label>
+                                        <input type="text" class="form-control " id="" placeholder="Nome do Pai">
+                                        <span id="helpBlock" class="help-block">Digite o nome da Pai da pessoa Fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Nome da Mãe</label>
+                                        <input type="text" class="form-control " id="" placeholder="Nome da Mãe">
+                                        <span id="helpBlock" class="help-block">Digite o nome da Mãe da pessoa Fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">RG</label>
+                                        <input type="text" class="form-control " id="" placeholder="RG">
+                                        <span id="helpBlock" class="help-block">Digite o Número da sua RG</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">CPF</label>
+                                        <input type="text" class="form-control " id="" placeholder="CPF">
+                                        <span id="helpBlock" class="help-block">Digite o Número da sua CPF</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">CNH</label>
+                                        <input type="text" class="form-control" id="" placeholder="CNH">
+                                        <span id="helpBlock" class="help-block">Digite o Número da sua CNH</span>
+                                    </div>
+
+
+                                </div> <!-- fim div .panel-body -->
+                            </div> <!-- fim div .tabpanel #visao -->
+
+                            <!-- Fim tab #visao -->
+
+                            <div role="tabpanel" class="panel panel-info tab-pane fade" id="conta">
+                                <div class="panel-heading">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    Informaçôes de contato
+                                </div> <!-- fim div .painel-heading -->
+                                <div class="panel-body">
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Telefone 1</label>
+                                        <input type="text" class="form-control " id="" placeholder="Telefone 1">
+                                        <span id="helpBlock" class="help-block">Digite o Telefone para contato da pessoa Fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Telefone 2</label>
+                                        <input type="text" class="form-control " id="" placeholder="Telefone 2">
+                                        <span id="helpBlock" class="help-block">Digite o Telefone para contato da pessoa Fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Celular</label>
+                                        <input type="text" class="form-control " id="" placeholder="Celular">
+                                        <span id="helpBlock" class="help-block">Digite o Celular para contato da pessoa Fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Email 1</label>
+                                        <input type="email" class="form-control " id="" placeholder="Email 1">
+                                        <span id="helpBlock" class="help-block">Digite o Email da pessoa fisica</span>
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Email 2</label>
+                                        <input type="email" class="form-control " id="" placeholder="Email 2">
+                                        <span id="helpBlock" class="help-block">Digite outro Email da pessoa fisica</span>
+                                    </div>
+
+
+                                </div> <!-- fim div .panel-body -->
+                            </div> <!-- fim div .tabpanel #conta -->
+
+                                    <!-- Fim tab #conta -->
+
+                                    <div role="tabpanel" class="panel panel-info tab-pane fade" id="perfil-blog">
+                                        <div class="panel-heading">
+                                            <i class="fa fa-rss" aria-hidden="true"></i>
+                                            Perfil Blog
+                                        </div> <!-- fim div .painel-heading -->
+                                        <div class="panel-body">
+
+                                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                                <div class="list-group">
+                                                    <a href="#info-blog" class="list-group-item a-style-menu-inline " aria-controls="info-blog" role="tab" data-toggle="tab" style="border-radius: 0px !important;">
+                                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                                        Informações
+                                                    </a>
+                                                    <a href="#avatar-blog" class="list-group-item a-style-menu-inline" aria-controls="avatar-blog" role="tab" data-toggle="tab" style="border-radius: 0px !important;">
+                                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                                        Avatar
+                                                    </a>
+                                                </div> <!-- Fim div .list-group -->
+                                            </div> <!-- fim div .col-md-3.col-sm-12.col-xs-12 -->
+
+                                            <div class="col-md-9 col-sm-12 col-xs-12">
+                                                <div class="tab-content">
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="info-blog">
+                                                        <h4 class="text-center">
+                                                            <i class="fa fa-cog" aria-hidden="true"></i>
+                                                            Informaçoes do Perfil do blog
+                                                        </h4>
+                                                        <div class="separador-2"></div> <!-- fim div.separador-2 -->
+
+                                                        <div class="form-group text-color-1">
+                                                            <label for="">Postar como :</label>
+                                                            <input type="text" class="form-control" id="" placeholder="User Name" value="ADM">
+                                                        </div> <!-- fim div .form-group -->
+
+                                                        <br>
+                                                        <button type="submit" class="btn btn-success" id="subir">
+                                                            <i class="fa fa-check-square-o"></i>
+                                                            Salvar
+                                                        </button>
+                                                    </div> <!-- fim div .tab-pane.fade.in.active#info -->
+
+                                                    <!-- Fim tab #info -->
+
+                                                    <div role="tabpanel" class="tab-pane fade" id="avatar-blog">
+                                                        <h4 class="text-center">
+                                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                                            Trocar avatar
+                                                        </h4>
+                                                        <div class="separador-2"></div> <!-- fim div.separador-2 -->
+
+
+
+
+                                                        <br>
+                                                        <button type="submit" class="btn btn-success" id="subir">
+                                                            <i class="fa fa-check-square-o"></i>
+                                                            Salvar
+                                                        </button>
+                                                    </div> <!-- fim div .tab-pane.fade.in.active #avatar-blog -->
+
+                                                    <!-- Fim tab #avatar-blog -->
+
+                                                </div> <!-- fim div .tab-content -->
+                                            </div> <!-- fim div .col-md-9 .col-sm-12 .col-xs-12 -->
+                                        </div> <!-- fim div .panel-body -->
+                                    </div><!-- fim div .tabpanel #perfil-blog -->
+
+                                    <!-- Fim tab #perfil-blog -->
+
+                                </div>
+
+                    </div> <!-- div /.col-lg-9.col-md-9.col-sm-12.col-xs-12.tst  -->
+
+
+
+
+
+
+                </div><!-- div /.row -->
+
+
+
+
+
+
+
+
+
+
+
+            </div><!-- /.container -->
+        </div> <!-- div /.canvas -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/jasny-bootstrap.min.js"></script>
+    </body>
+</html>
